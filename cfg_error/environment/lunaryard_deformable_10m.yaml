@@ -1,6 +1,6 @@
 name: Lunaryard
 seed: 42
-init_with_robot: True # set to True to initialize the environment with a robot.
+init_with_robot: True
 # Stage settings, only edit if you know what you are doing.
 lunaryard_settings:
   lab_length: 10.0
@@ -101,8 +101,8 @@ terrain_manager:
       x_size: ${....lunaryard_settings.lab_length}
       y_size: ${....lunaryard_settings.lab_width}
       resolution: ${....lunaryard_settings.resolution}
-      max_elevation: 0.1
-      min_elevation: -0.1
+      max_elevation: 0.5
+      min_elevation: -0.5
       z_scale: 1.0
       seed: ${....seed}
     
