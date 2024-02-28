@@ -542,13 +542,23 @@ class DeformationEngine:
             force (np.ndarray): projected contact forces on rover's wheels (num_points, 1)
         """
         if self.force_distribution == "uniform":
-            force = np.concatenate([np.ones(self.profile.shape[0]) * np.linalg.norm(contact_force) for contact_force in contact_forces])
+            first_partU = np.ones(self.profile.shape[0])
+            force = np.concatenate([first_partU * np.linalg.norm(contact_force) for contact_force in contact_forces])
+
         elif self.force_distribution == "sinusoidal":
             tmp = np.ones((self.profile_height, self.profile_width))
             scale = -1 + np.sin(np.pi * np.linspace(0, 1, self.profile_height)).reshape(-1, 1)
             scale = scale.repeat(self.profile_width, axis=1)
-            force = (tmp * scale).reshape(-1) * np.linalg.norm(contact_forces)
-            force = np.concatenate([(tmp * scale).reshape(-1) * np.linalg.norm(contact_force) for contact_force in contact_forces])
+            #force = (tmp * scale).reshape(-1) * np.linalg.norm(contact_forces)
+            
+            first_partS = (tmp * scale).reshape(-1)
+            force = np.concatenate([first_partS * np.linalg.norm(contact_force) for contact_force in contact_forces])
+
+        elif self.force_distribution == "trapezoidal":
+            
+            tmp = np.ones((self.profile_height, self.profile_width))
+            first_partT = tmp.reshape(-1)
+            force = np.concatenate([first_partT * np.linalg.norm(contact_force) for contact_force in contact_forces])
         return force
     
     

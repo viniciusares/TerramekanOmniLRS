@@ -103,16 +103,16 @@ terrain_manager:
       resolution: ${....lunaryard_settings.resolution}
       max_elevation: 0.1
       min_elevation: -0.1
-      z_scale: 1.0
+      z_scale: 2.00 #original value 1.0
       seed: ${....seed}
     
     deformation_engine:
-      wheel_width: 0.09
+      wheel_width: 0.14 # original value is 0.09
       wheel_radius: 0.1
       terrain_resolution: 0.01
       deform_offset: -0.01
       profile_type: rectangle
-      force_distribution: sinusoidal
+      force_distribution: uniform # options: uniform, sinusoidal, trapezoidal
       force_depth_ratio: 0.0005
 
     is_yard: True
