@@ -20,7 +20,8 @@ This fork is only focusing in renderer=ray_tracing and not path_tracing.
 <details><summary><b>Requirements</b></summary>
 
 Software:
- - Ubuntu 20.04 or 22.04 (in case you don't have ubuntu installed and is trying to set up dual boot, first read about how Secure Boot relates to UEFI/BIOSlegacy, if you don't invest time in this, be prepared for pain, tears and nightmares :)   )
+ - Ubuntu 20.04 or 22.04
+ - <details><summary><b>Ubuntu 20.04 or 22.04</b></summary> (in case you don't have ubuntu installed and is trying to set up dual boot, first read about how Secure Boot relates to UEFI/BIOSlegacy, if you don't invest time in this, be prepared for pain, tears and nightmares :)   ) </details>
  - ROS1 installed.
  - IsaacSim version 2022.2.1 or 2023.1.1
 
