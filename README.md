@@ -113,8 +113,8 @@ Please use the following citation if you use `OmniLRS` in your work. (This is ac
 ```bash
 /
 ├── Home
-    ├── student_folder
-    │   └── project_folder
+    ├── <student_folder>
+    │   └── <project_folder>
     │       ├── catkin_ws
     │       └── TerramekanOmniLRS
     │           ├── assets
@@ -149,7 +149,7 @@ Please use the following citation if you use `OmniLRS` in your work. (This is ac
     │   └── share
     │       └── ov
     │           └── pkg
-    │               └── isaac_sim-202x.x.1
+    │               └── isaac_sim-<version_number>
     │                   └── kit
     │                       └── python  
     │                           ├── python
