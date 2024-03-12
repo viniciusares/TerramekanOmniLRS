@@ -5,7 +5,7 @@
 This fork contains work from SpaceR, SRL and UNICAMP FEEC AdRobLab. For details refer to the “upstream” repositories.
 > Should you run into any bug, or would like to have a new feature, feel free to open an issue.
 
-This initial include the environments:
+This release includes the environments:
  - The lunalab 
  - The lunaryard (3 versions 20m, 40m, 80m)
  - The deformable lunalab
