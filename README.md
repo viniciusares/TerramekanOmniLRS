@@ -1,9 +1,7 @@
 # TerramekanOmniLRS
-#### version=unversioned
 ### a fork from jnskkmhr/OmniLRS (which itself is a fork from AntoineRichard/OmniLRS)
 
 This fork contains work from SpaceR, SRL and UNICAMP FEEC AdRobLab. For details refer to the “upstream” repositories.
-> Should you run into any bug, or would like to have a new feature, feel free to open an issue.
 
 This release includes the environments:
  - The lunalab 
@@ -21,7 +19,7 @@ This fork is only focusing in renderer=ray_tracing and not path_tracing.
 <details><summary><b>Requirements</b></summary>
 
 Software:
-- <details><summary><b>Ubuntu 20.04 or 22.04</b></summary> (in case you don't have ubuntu installed and is trying to set up dual boot, first read about how Secure Boot relates to UEFI/BIOSlegacy, if you don't invest time in this, be prepared for pain, tears and nightmares :)   ) </details>
+- <details><summary><b>Ubuntu 20.04 or 22.04</b></summary> (for ubuntu dual boot setting up, check about Secure Boot and UEFI/BIOSlegacy ) </details>
 - ROS1 installed.
 - IsaacSim version 2022.2.1 or 2023.1.1
 
@@ -90,17 +88,15 @@ Please, try on the upstream repositories
 
 <details><summary><b>Simulation Interaction</b></summary>
 Since we do not have custom topics, we had to use the base ROS topics for everything.
- Most of the simulation interactions are Not fairly straightforward, but we can't provide details on how to make custom fancy runs, for that case refer to OpenAI chatGPT or your favorite chatbot.  
-
+ 
 - Interacting with the robots: refer to upstream repos
 - Radomizing terrain or rocks: refer to upstrem repos
 - Hiding the rocks: in IsaacSim, the right-most menu has a tree structure showing the current items of the sim, find the "rocks item", then one of the columns has an eye-logo button. Use this button to hide/unhide the rocks.
-- Changing the render mode: path_tracing / ray_tracing (try at your own risk of refer to upstream repos and try at your own risk)
  
 </details>
 
 ## Citation
-Please use the following citation if you use `OmniLRS` in your work. (This is actually important, avoid being sued ;-) )
+Please use the following citation if you use `OmniLRS` in your work.
 ```bibtex
 @article{richard2023omnilrs,
   title={OmniLRS: A Photorealistic Simulator for Lunar Robotics},
@@ -114,7 +110,7 @@ Please use the following citation if you use `OmniLRS` in your work. (This is ac
 ```bash
 /
 ├── Home
-    ├── <student_folder>
+    ├── <user_folder>
     │   └── <project_folder>
     │       ├── catkin_ws
     │       └── TerramekanOmniLRS
